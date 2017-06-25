@@ -2,41 +2,32 @@ var gulp = require('gulp'),
 watch = require('gulp-watch'),
 browserSync = require('browser-sync').create();
 
-gulp.task('watch',['default'], function(){
+gulp.task('watch', function(){
+
   browserSync.init({
     server: {
-      baseDir: "dist"
+      baseDir: "src"
     }
   });
 
   watch('./src/index.html', function(){
-    gulp.start('default');
-  });
-
-  watch('./dist/index.html', function(){
     browserSync.reload();
   });
 
-  watch('./src/assets/styles/**/*.sass', function(){
-    gulp.start('default');
+  watch('./src/assets/styles/**/*.css', function(){
     gulp.start('cssInject');
   });
 
-  watch('./src/assets/scripts/**/*.js', function(){
-    gulp.start('default');
+  watch("./src/assets/scripts/**/*.js", function(){
     gulp.start('scriptsRefresh');
-  });
+  })
+})
 
+gulp.task("cssInject", ['styles'], function(){
+  return gulp.src('./src/temp/styles/styles.css')
+  .pipe(browserSync.stream());
 });
 
-gulp.task('cssInject', function(){
-
-  return gulp.src('./dist/css/*.css')
-  pipe(browserSync.stream());
-});
-
-gulp.task('scriptsRefresh', function(){
-
-  return gulp.src('./dist/scripts/*.js')
-  pipe(browserSync.reload());
-});
+gulp.task("scriptsRefresh", ['scripts'], function(){
+  browserSync.reload();
+} );

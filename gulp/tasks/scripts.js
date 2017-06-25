@@ -1,13 +1,12 @@
 var gulp = require('gulp'),
-concat = require('gulp-concat'),
-babel = require('gulp-babel');
+webpack = require('webpack');
 
-
-
-gulp.task('babel', () => {
-  return gulp.src('./src/assets/scripts/**/*.js')
-  .pipe(babel({
-    presets: ['es2015']
-  })
-  .pipe(gulp.dest('./src/assets/script')));
+gulp.task('scripts', ['modernizr'], function(callback){
+  webpack(require('../../webpack.config.js'), function(err, stats){
+    if(err){
+      console.log(err.toString());
+    }
+    console.log(stats.toString());
+    callback();
+  });
 });

@@ -3,14 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>Starter Gulp</title>
-    <!--build:css css/min.css-->
-    <link rel="stylesheet" href="./assets/styles/styles.css">
-    <!--endbuild-->
+    <!-- build:css assets/styles/styles.css -->
+    <link rel="stylesheet" href="temp/styles/styles.css">
+    <!-- endbuild -->
+
+    <!-- build:js assets/scripts/Vendor.js -->
+    <script src="/temp/scripts/Vendor.js" ></script>
+    <!-- endbuild -->
   </head>
   <body>
     <h1 class="site-header">Hello</h1>
-    <!--build:js scripts/combined.js-->
-    <script type="text/javascript" src='./assets/scripts/App.js'></script>
-    <!--endbuild-->
+    <!-- build:js assets/scripts/App.js -->
+    <script src="/temp/scripts/App.js"></script>
+    <!-- endbuild -->
   </body>
 </html>

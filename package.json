@@ -1,24 +1,54 @@
 {
-  "name": "starter-gulp",
+  "name": "gulp-starter",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "autoprefixer": "^7.1.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "browser-sync": "^2.18.12",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-modernizr": "^1.0.0-alpha",
+    "gulp-postcss": "^7.0.0",
+    "gulp-svg-sprite": "^1.3.7",
+    "gulp-rename": "^1.2.2",
+    "gulp-watch": "^4.3.11",
+    "gulp-svg2png": "^2.0.2",
+    "jquery": "^3.2.1",
+    "jquery-smooth-scroll": "^2.2.0",
+    "lazysizes": "^4.0.0-rc3",
+    "picturefill": "^3.0.2",
+    "postcss-hexrgba": "^0.2.1",
+    "postcss-nested": "^2.0.2",
+    "postcss-simple-vars": "^4.0.0",
+    "postcss-import": "^10.0.0",
+    "postcss-mixins": "^6.0.0",
+    "waypoints": "^4.0.1",
+    "webpack": "^2.6.1"
+  },
+  "devDependencies": {
+    "gulp-cssnano": "^2.1.2",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-rev": "^7.1.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-usemin": "^0.3.28",
+    "normalize.css": "^7.0.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MourrierQ/AdventureSite.git"
+  },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "babel-preset-es2015": "^6.24.1",
-    "gulp": "^3.9.1",
-    "gulp-babel": "^6.1.2",
-    "gulp-clean-css": "^3.4.2",
-    "gulp-concat": "^2.6.1",
-    "gulp-html": "^0.4.6",
-    "gulp-if": "^2.0.2",
-    "gulp-sass": "^3.1.0",
-    "gulp-uglify": "^3.0.0",
-    "gulp-useref": "^3.1.2",
-    "gulp-watch": "^4.3.11"
-  }
+  "bugs": {
+    "url": "https://github.com/MourrierQ/AdventureSite/issues"
+  },
+  "homepage": "https://github.com/MourrierQ/AdventureSite#readme"
 }

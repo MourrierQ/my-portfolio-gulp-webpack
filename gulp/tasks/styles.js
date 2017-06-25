@@ -1,11 +1,8 @@
 var gulp = require('gulp'),
-sass = require('gulp-sass'),
-cleanCSS = require('gulp-clean-css');
+sass = require('gulp-sass');
 
 gulp.task('styles', function(){
-  return gulp.src('./src/assets/styles/**/*.sass')
-    .pipe(sass({
-      style: 'compressed'
-    })).on('error',sass.logError)
-    .pipe(gulp.dest('./src/assets/styles'));
+  return gulp.src('./src/assets/styles/styles.sass')
+    .pipe(sass().on("error", sass.logError))
+    .pipe(gulp.dest('./src/temp/styles'));
 });
