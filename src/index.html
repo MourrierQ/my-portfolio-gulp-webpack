@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Starter Gulp</title>
+    <title>qmdev</title>
     <!-- build:css assets/styles/styles.css -->
     <link rel="stylesheet" href="temp/styles/styles.css">
     <!-- endbuild -->
@@ -12,7 +12,114 @@
     <!-- endbuild -->
   </head>
   <body>
-    <h1 class="site-header">Hello</h1>
+    <div class="primary-nav">
+      <div class="container container--nav">
+      <div class="primary-nav__left-nav">
+        <ul>
+          <li><a href="#About" id="About-link">About me</a></li>
+          <li><a href="#Skillset" id="Skillset-link">Skillset</a></li>
+        </ul>
+      </div>
+      <!-- <div class="primary-nav__logo primary-nav__logo--expanded">
+        <h1><span class="logo__bracket"><</span>Q<span class="logo__fullname">uentin </span>/ M<span class="logo__fullname">ourrier</span><span class="logo__bracket">></span></h1>
+        <h2>Web designer // Web developer // Learner</h2>
+      </div> -->
+      <div class="primary-nav__right-nav">
+        <ul>
+          <li><a href="#Portfolio" id="Portfolio-link">Portfolio</a></li>
+          <li><a href="#Contact" id="Contact-link">Contact</a></li>
+        </ul>
+      </div>
+      </div>
+    </div>
+    <div class="large-hero">
+      <div class="large-hero__text-content">
+        <h1 class="large-hero__title"><span><</span> Quentin / Mourrier <span>></span></h1>
+        <h2 class="large-hero__subtitle">Web designer // Web developer // Learner</h2>
+      </div>
+    </div>
+    <div class="container--white-angle"><div class="large-hero--white-angle"></div></div>
+
+    <div id="About" class="page-section page-section--about" data-matching-link="#About-link">
+      <div class="container">
+        <h1 class="page-section__title">About me ...</h1>
+        <h2 class="page-section__subtitle">As a web designer</h2>
+        <p class="page-section__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates pariatur nam dicta facilis unde natus! Iusto accusantium unde molestiae possimus officiis odit, ut ab nam repudiandae. Quos, praesentium? Molestiae, explicabo.</p>
+        <h2 class="page-section__subtitle">As a web developer</h2>
+        <p class="page-section__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates pariatur nam dicta facilis unde natus! Iusto accusantium unde molestiae possimus officiis odit, ut ab nam repudiandae. Quos, praesentium? Molestiae, explicabo.</p>
+        <h2 class="page-section__subtitle">As a learner</h2>
+        <p class="page-section__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates pariatur nam dicta facilis unde natus! Iusto accusantium unde molestiae possimus officiis odit, ut ab nam repudiandae. Quos, praesentium? Molestiae, explicabo.</p>
+      </div>
+    </div>
+    <div id="Skillset"  class="page-section page-section--blue" data-matching-link="#Skillset-link">
+      <h1 class="page-section__title">Skillset</h1>
+      <div  class="container">
+
+        <div class="container--flex">
+          <div class="skillset skillset__item">
+            <div class="skillset__item__label">Programming</div>
+            <div class="skillset__item__gauge">
+              <div class="skillset__item__gauge__lvl"></div>
+            </div>
+          </div>
+          <div class="skillset skillset__item">
+            <div class="skillset__item__label">Design</div>
+            <div class="skillset__item__gauge">
+              <div class="skillset__item__gauge__lvl"></div>
+            </div>
+          </div>
+          <div class="skillset skillset__item">
+            <div class="skillset__item__label">Organization</div>
+            <div class="skillset__item__gauge">
+              <div class="skillset__item__gauge__lvl"></div>
+            </div>
+          </div>
+          <div class="skillset skillset__item">
+            <div class="skillset__item__label">Learning</div>
+            <div class="skillset__item__gauge">
+              <div class="skillset__item__gauge__lvl"></div>
+            </div>
+          </div>
+          <div class="skillset skillset__item">
+            <div class="skillset__item__label">English</div>
+            <div class="skillset__item__gauge">
+              <div class="skillset__item__gauge__lvl"></div>
+            </div>
+          </div>
+          <div class="skillset skillset__item">
+            <div class="skillset__item__label">French</div>
+            <div class="skillset__item__gauge">
+              <div class="skillset__item__gauge__lvl"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="Portfolio" class="page-section" data-matching-link="#Portfolio-link">
+      <h1 class="page-section__title">portfolio</h1>
+      <div class="container">
+        <div class="overlay overlay--portfolio">
+          <h2 class="page-section__subtitle">Coming soon</h2>
+          <p class="page-section__paragraph">In the meantime, you can check out my work on <a href="">github</a> or <a href="">codepen</a></p>
+        </div>
+        <img class="underconstruct" src="./assets/images/underconstruct.jpeg" alt="under construction">
+      </div>
+    </div>
+    <div id="Contact" class="page-section page-section--blue" style="height: 200px" data-matching-link="#Contact-link">
+      <h1 class="page-section__title page-section__title--less-margin">Contact</h1>
+      <div class="container container--flex">
+        <a class="icon icon--twitter-icon" href=""></a>
+        <a class="icon icon--mail-icon" href=""></a>
+        <a class="icon icon--facebook-icon" href=""></a>
+      </div>
+    </div>
+    <footer>
+      <div class="copyright">
+        Copyright &copy; 2017
+      </div>
+    </footer>
+
+
     <!-- build:js assets/scripts/App.js -->
     <script src="/temp/scripts/App.js"></script>
     <!-- endbuild -->

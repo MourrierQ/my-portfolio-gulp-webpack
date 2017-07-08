@@ -63,16 +63,20 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 9);
 /******/ })
 /************************************************************************/
 /******/ ([
-/* 0 */
+/* 0 */,
+/* 1 */,
+/* 2 */,
+/* 3 */,
+/* 4 */
 /***/ (function(module, exports) {
 
 /*!
  * modernizr v3.5.0
- * Build https://modernizr.com/download?-setclasses-dontmin
+ * Build https://modernizr.com/download?-svg-setclasses-dontmin
  *
  * Copyright (c)
  *  Faruk Ates
@@ -293,6 +297,30 @@
   }
 
   ;
+  /*!
+  {
+    "name": "SVG",
+    "property": "svg",
+    "caniuse": "svg",
+    "tags": ["svg"],
+    "authors": ["Erik Dahlstrom"],
+    "polyfills": [
+      "svgweb",
+      "raphael",
+      "amplesdk",
+      "canvg",
+      "svg-boilerplate",
+      "sie",
+      "dojogfx",
+      "fabricjs"
+    ]
+  }
+  !*/
+  /* DOC
+  Detects support for SVG in `<embed>` or `<object>` elements.
+  */
+
+  Modernizr.addTest('svg', !!document.createElementNS && !!document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect);
 
   // Run each test
   testRunner();
@@ -315,7 +343,8 @@
 })(window, document);
 
 /***/ }),
-/* 1 */
+/* 5 */,
+/* 6 */
 /***/ (function(module, exports) {
 
 (function(window, factory) {
@@ -1017,7 +1046,7 @@
 
 
 /***/ }),
-/* 2 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_RESULT__;/*! picturefill - v3.0.2 - 2016-02-12
@@ -2568,17 +2597,17 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*! picturefill - v3.0.2 - 2016-02-12
 
 
 /***/ }),
-/* 3 */,
-/* 4 */
+/* 8 */,
+/* 9 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__temp_scripts_modernizr__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__temp_scripts_modernizr__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__temp_scripts_modernizr___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__temp_scripts_modernizr__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_picturefill__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_picturefill__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_picturefill___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_picturefill__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_lazysizes__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_lazysizes__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_lazysizes___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_lazysizes__);
 
 

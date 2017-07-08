@@ -1,0 +1,49 @@
+.large-hero
+  width: 100%
+  height: 400px
+  margin: 0 auto
+  background-color: $mainBlue
+  z-index: -2
+  position: relative
+
+
+  &__text-content
+    text-align: center
+    position: absolute
+    font-family: "consolas", sans-serif
+    top: 25%
+    left: 0
+    right: 0
+    margin-right: auto
+    margin-left: auto
+    color: white
+
+    span
+      font-size: 40px
+
+  &__title
+   text-transform: uppercase
+   font-size: 31px
+   letter-spacing: 0.3rem
+   margin-bottom: 0
+
+  &__subtitle
+    font-size: 18px
+    margin-top: 5px
+
+  &--white-angle
+    z-index: -1
+    background-color: white
+    height: 400px
+    width: 2000px
+    transform-origin: left
+    transform: rotate(-7deg)
+    position: absolute
+    left: 0
+    right: 0
+    margin-right: auto
+    margin-left: auto
+    overflow: hidden
+    transition: all .2s
+
+    

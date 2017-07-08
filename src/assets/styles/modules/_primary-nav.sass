@@ -1,0 +1,86 @@
+.primary-nav
+  width: auto
+  height: 80px
+  background: rgba($secondaryBlue, .6)
+  margin: 0 auto
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  z-index: 2
+
+
+
+
+
+  &__left-nav
+    float: left
+
+
+
+    ul
+      margin: 31px 0
+
+      li
+        list-style: none
+        display: inline-block
+
+        a
+          text-decoration: none
+          text-transform: uppercase
+          color: rgba(white, .8)
+          font-family: "consolas", sans-serif
+          font-size: 18px
+          font-weight: bold
+          margin-right: 45px
+          letter-spacing: 0.2rem
+
+          &.is-current-link
+            border-bottom: 2px solid $mainOrange
+            color: white
+
+  &__right-nav
+    float: right
+    margin-right: 20px
+
+    ul
+      margin: 31px 0
+
+      li
+        list-style: none
+        display: inline-block
+
+        a
+          text-decoration: none
+          text-transform: uppercase
+          color: rgba(white, .8)
+          font-family: "consolas", sans-serif
+          font-size: 18px
+          font-weight: bold
+          letter-spacing: 0.2rem
+          margin-left: 45px
+
+
+          &.is-current-link
+            border-bottom: 2px solid $mainOrange
+            color: white
+
+  &__logo
+    position: absolute
+    width: 700px
+    top: 120%
+    left: 0
+    right: 0
+    margin-left: auto
+    margin-right: auto
+    background: $mainBlue
+    text-align: center
+    color: white
+    font-family: "consolas", sans-serif
+    font-weight: bold
+
+
+    &--expanded
+
+    &__title
+      color: white
